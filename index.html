@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html> -> mendefinisikan untuk dokumen html5 -->
+<!DOCTYPE html>
+<!--
+    html -> root html
+    atr lang -> untuk bahasa dokumen
+ -->
+<html lang="id">
+<!-- head -> wadah untuk metadata -->
+<head>
+    <!-- atr charset="UTF-8" -> sebuah pengkodean karakter dengan lebar variabel tertentu -->
+    <meta charset="UTF-8">
+    <!-- atr name="viewport" -> untuk mengentrol ukuran dan skala halaman web  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -> untuk judul pada tab browser -->
+    <title>Febri Hidayan</title>
+    <!-- link -> untuk mengambil css -->
+    <link rel="stylesheet" href="app.css">
+</head>
+<!-- body -> berisi semua konten dokumen HTM -->
+<body>
+    <!-- nav -> mendefinisikan sekumpulan tautan navigasi -->
+    <nav>
+        <!-- div _> mendefinisikan divisi atau bagian dalam dokumen HTML -->
+        <div class="start">
+            <!-- a -> untuk membuat tautan -->
+            <a href="index.html">Febri Hidayan</a>
+        </div>
+        <div class="end">
+            <a href="unduh.html">Unduh</a>
+            <a href="karya.html">Karya</a>
+            <a href="kontak.html">Kontak</a>
+            <a href="tentang.html">Tentang</a>
+        </div>
+    </nav>
+
+    <!-- br -> memberikan jarak -->
+    <br><br>
+
+    <!-- header -> untuk konten pengantar atau sekumpulan tautan navigasi -->
+    <header class="header">
+        <!-- figure -> untuk mewakili gambar -->
+        <figure class="text-center">
+            <!-- img -> menampilkam gambar -->
+            <img
+                src="foto.jpg"
+                alt="profil saya"
+            >
+            <!-- figcaption -> memberikan deskripsi pada gambar -->
+            <figcaption>Febri Hidayan</figcaption>
+            <!-- strong -> membuat teks tebal -->
+            <strong>(1910031802055)</strong>
+        </figure>
+    </header>
+
+    <br><br><br>
+
+    <!-- main -> menentukan struktur konten utama -->
+    <main>
+        <!-- h1 -> heading atau judul -->
+        <h1>Artikel</h1>
+        <!-- hr -> membuat garis horizontal -->
+        <hr>
+        <br>
+        <!-- section -> menetukan suatu bagian dokumen html -->
+        <section class="columns">
+            <div class="column card text-center">
+                <a
+                    href="rest-api.html"
+                >
+                    <!-- h3 -> heading atau judul yang terdiri dari h1 s/d h6 -->
+                    <h3>Mengenal REST API</h3>
+                    <!--
+                        p -> mendefinisikan paragraf
+                        em -> untuk teks miring
+                    -->
+                    <p><em>API</em> adalah singkatan dari <em>Application Programming Interface</em> yaitu sebuah <em>software</em> yang memungkinkan para <em>developer</em> untuk mengintegrasikan.</p>
+                </a>
+            </div>
+            <div class="column card text-center">
+                <a
+                    href="apa-itu-html.html"
+                >
+                    <h3>Apa itu HTML?</h3>
+                    <p><em>Hypertext Markup Language</em> adalah bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet.</p>
+                </a>
+            </div>
+            <div class="column card text-center">
+                <a
+                    href="manipulasi-string-pada-php.html"
+                >
+                    <h3>Manipulasi String Pada PHP</h3>
+                    <p>Manipulasi <em>string</em> PHP memungkinkan kita melakukan interaksi dan perubahan pada karakter yang akan dieksekusi.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <br><br>
+
+    <!-- footer -> untuk memberikan sebuah informasi -->
+    <footer class="text-center">
+        <p>&copy;2020 Febri Hidayan, Hak cipta dilindungi.</p>
+    </footer>
+</body>
+</html>

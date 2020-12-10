@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulasi String Pada PHP - Febri Hidayan</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <nav>
+        <div class="start">
+            <a href="index.html">Febri Hidayan</a>
+        </div>
+        <div class="end">
+            <a href="unduh.html">Unduh</a>
+            <a href="karya.html">Karya</a>
+            <a href="kontak.html">Kontak</a>
+            <a href="tentang.html">Tentang</a>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <main>
+        <h1>Manipulasi String Pada PHP</h1>
+        <hr>
+        <br>
+        <article class="content">
+            <p>
+                Manipulasi <em>string</em> PHP memungkinkan kita melakukan interaksi dan perubahan pada karakter yang akan dieksekusi. Ada beberapa fungsi PHP yang paling sering digunakan yaitu <em>trim()</em>, <em>substr()</em>, <em>str_replace()</em>, dan lainnya.
+            </p>
+            <h2>strtoupper() dan strtolower()</h2>
+            <p>
+                Jika Anda ingin membuat teks menjadikan teks besar atau kecil semua, maka memilih fungsi <em>strtoupper()</em> dan <em>strtolower()</em> adalah pilihan yang paling tepat. Fungsi <em>strtoupper()</em> akan menjadikan teks teks besar semua, sedangkan fungsi <em>strtolower()</em> kebalikannya. Berikut contohnya:
+            </p>
+            <code>
+                $text = 'Saya sedang belajar PHP';<br>
+                echo strtoupper($text); // SAYA SEDANG BELAJAR PHP<br>
+                echo strtolower($text); // saya sedang belajar php
+            </code>
+            <h2>ucfirst() dan lcfirst()</h2>
+            <p>
+                Pada kaitannya Anda akan menggunakan fungsi yang satu ini untuk membuat huruf besar dan kecil di awal teks. Fungsi <em>ucfirst()</em> akan menjadikan huruf besar diawal teks, sedangankan fungsi <em>lcfirst()</em> kebalikannya. Berikut contohnya:
+            </p>
+            <code>
+                $text = 'php aja';<br>
+                echo ucfirst($text); // Php aja<br>
+                $text = 'PHP aja';<br>
+                echo lcfirst($text); // pHP aja
+            </code>
+            <p>
+                Sumber:<br>
+                <a href="https://php.net" target="_blank">Docs PHP</a><br>
+                <a href="https://sekolahprogram.com" target="_blank">Sekolah Program</a>
+            </p>
+        </article>
+    </main>
+
+    <br><br>
+
+    <footer class="text-center">
+        <p>&copy;2020 Febri Hidayan, Hak cipta dilindungi.</p>
+    </footer>
+</body>
+</html>
